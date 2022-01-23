@@ -1,0 +1,29 @@
+CED18I063 Sujoy Datta
+
+Lab Exercise 3 - Write a C program or shell script to send a simple mail to any host without using any professional mailer like gmail.
+
+
+Procedure-
+1. Install the sendmail package for Ubuntu 20.04LTS. 
+Sendmail's core purpose, like other MTAs, is to safely transfer email among hosts, usually using the SMTP protocol. However, Sendmail is highly configurable, allowing control over almost every aspect of how email is handled, including the protocol used. Many system administrators elect to use Sendmail as their MTA due to its power and scalability.
+
+2. Create a new file email.txt.
+Subject: Device Driver Lab-3
+<email content>
+
+3. Create a new file using sudo privileges. Location- /etc/ssmtp/ssmtp.conf
+File content- 
+UseSTARTTLS=YES
+FromLineOverride=YES
+root=admin@example.com
+mailhub=smtp.gmail.com:587
+AuthUser=sujoydatta1234567890@gmail.com
+AuthPass=************
+
+4. Shell Code-
+sendmail <recipient> < email.txt
+Example- sendmail sujoydatta.2009@gmail.com < email.txt
+The email is sent succesfully.
+
+
+

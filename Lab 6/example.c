@@ -127,7 +127,7 @@ static ssize_t mychardev_write(struct file *file, const char __user *buf, size_t
     if (ncopied == 0) {
         printk("Copied %zd bytes from the user\n", maxdatalen);
     } else {
-        printk("Could't copy %zd bytes from the user\n", ncopied);
+        printk("Couldn't copy %zd bytes from the user\n", ncopied);
     }
 
     databuf[maxdatalen] = 0;
@@ -138,7 +138,7 @@ static ssize_t mychardev_write(struct file *file, const char __user *buf, size_t
 }
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Oleg Kutkov <elenbert@gmail.com>");
+MODULE_AUTHOR("sujoydatta");
 
 module_init(mychardev_init);
 module_exit(mychardev_exit);

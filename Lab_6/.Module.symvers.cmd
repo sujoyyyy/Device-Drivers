@@ -1,0 +1,1 @@
+cmd_/home/sujoy/Desktop/DeviceDrivers/Lab_6/Module.symvers := sed 's/\.ko$$/\.o/' /home/sujoy/Desktop/DeviceDrivers/Lab_6/modules.order | scripts/mod/modpost -m -a  -o /home/sujoy/Desktop/DeviceDrivers/Lab_6/Module.symvers -e -i Module.symvers   -T -

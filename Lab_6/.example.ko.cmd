@@ -1,0 +1,1 @@
+cmd_/home/sujoy/Desktop/DeviceDrivers/Lab_6/example.ko := ld -r  -m elf_x86_64  --build-id=sha1  -T scripts/module.lds -o /home/sujoy/Desktop/DeviceDrivers/Lab_6/example.ko /home/sujoy/Desktop/DeviceDrivers/Lab_6/example.o /home/sujoy/Desktop/DeviceDrivers/Lab_6/example.mod.o;  true

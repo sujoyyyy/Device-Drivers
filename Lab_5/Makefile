@@ -1,5 +1,5 @@
 CONFIG_MODULE_SIG=n
-EXTRA_CFLAGS = -Wall -g
+EXTRA_CFLAGS = -Wall -g -w
 obj-m = example.o
 KDIR = /usr/src/linux-headers-5.13.0-37-generic
 kbuild:
